@@ -32,11 +32,8 @@ class CashRegister
   end
 
   def void_last_transaction
-    quantity = self.transaction[2]
-    quantity.times do
-      self.purchases.pop
-      self.total -= self.transaction[1]
-    end
+    self.total = self.total - self.last_transaction
   end
+  
 
 end
