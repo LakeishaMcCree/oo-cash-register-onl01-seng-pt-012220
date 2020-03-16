@@ -36,6 +36,7 @@ class CashRegister
     quantity.times do
       self.purchases.pop
       self.total -= self.transaction[1]
+    end
   end
 
 end
